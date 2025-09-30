@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gửi em/anh ❤️</title>
+    <meta
+      name="description"
+      content="Trang tỏ tình nhỏ xinh với nút Đồng ý hoặc Không, kèm hiệu ứng dễ thương."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <canvas id="confetti-canvas"></canvas>
+
+    <div class="floating-hearts" aria-hidden="true">
+      <span>❤</span><span>❤</span><span>❤</span><span>❤</span><span>❤</span>
+      <span>❤</span><span>❤</span><span>❤</span><span>❤</span><span>❤</span>
+    </div>
+
+    <main class="container" role="main">
+      <section class="card" aria-live="polite">
+        <h1>
+          Em/Anh có đồng ý<br />
+          làm người yêu anh/em không? 🥺
+        </h1>
+        <p class="subtitle">
+          Mình hứa sẽ rủ đi ăn ngon, dỗ dành khi buồn, và ở cạnh nhau thật lâu.
+        </p>
+
+        <div class="actions" aria-label="Lựa chọn trả lời">
+          <button id="yesBtn" class="btn yes" aria-label="Đồng ý">
+            Đồng ý 💘
+          </button>
+          <button id="noBtn" class="btn no" aria-label="Không">Không 🙈</button>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <small>Made with love • Chill</small>
+      </footer>
+    </main>
+
+    <dialog id="modal" class="modal" aria-labelledby="modal-title">
+      <div class="modal-content">
+        <h2 id="modal-title">Yay! Tụi mình yêu nhau rồi nhé! 💞</h2>
+        <p>
+          Cảm ơn em/anh đã đồng ý. Hứa hẹn những buổi hẹn hò đầy tiếng cười, trà
+          sữa, và những cái ôm thật chặt.
+        </p>
+        <button id="closeModal" class="btn close">Đóng</button>
+      </div>
+    </dialog>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
